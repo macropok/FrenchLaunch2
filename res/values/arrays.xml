@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="menu">
+        <item>Général</item>
+        <item>Mon profil</item>
+        <item>Votre communauté</item>
+        <item>Mes Alertes</item>
+        <item>Avancé</item>
+    </string-array>
+    
+    <string-array name="menu_s1">
+        <item>Voulez activer les alertes par maintien long ?</item>
+        <item>Wifi</item>
+        <item>Bluetooth</item>
+        <item>Audio</item>
+        <item>Paramètres téléphone</item>
+    </string-array>
+    
+    <string-array name="menu_s2">
+        <item>Informations personnelles</item>
+        <item>Votre adresse</item>
+        <item>Votre accès</item>
+    </string-array>
+    
+    <string-array name="menu_s3">
+        <item>Enfant</item>
+        <item>Voisin</item>
+        <item>Ami</item>
+        <item>Aide à domicile</item>
+        <item>Soignants proches</item>
+        <item>favoris 1</item>
+        <item>favoris 2</item>
+    </string-array>
+    <string-array name="menu_s4">
+        <item>Chute</item>
+        <item>Inactivité</item>
+        <item>Batterie</item>
+        <item>Périmètre de Sécurité</item>
+        
+    </string-array>
+    <string-array name="menu_s5">
+        <item>Police</item>
+        <item>Pompiers</item>
+        <item>Samu</item>
+        <item>Messages</item>
+        
+    </string-array>
+    <string-array name="menu_s54">
+        <item>Message Audio</item>
+        <item>Message texte</item>
+    </string-array>
+    
+    <string-array name="chut_levels">
+        <item>Low</item>
+        <item>Medium</item>	
+        <item>High</item>
+    </string-array>
+    <string-array name="chut_cancel_duration">
+        <item>1s</item>
+        <item>5s</item>	
+        <item>10s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </string-array>
+    <string-array name="inactivite_time_before_alert">
+        <item>5min</item>
+        <item>10min</item>	
+        <item>20min</item>
+        <item>30min</item>
+        <item>60min</item>
+        <item>360min</item>
+    </string-array>
+    <string-array name="batterie_minimum_before_alert">
+        <item>1%</item>
+        <item>5%</item>	
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>30%</item>
+    </string-array>
+    <string-array name="securite_distance_before_alert">
+        <item>10m</item>
+        <item>20m</item>	
+        <item>50m</item>
+        <item>100m</item>
+        <item>150m</item>
+        <item>300m</item>
+    </string-array>
+</resources>

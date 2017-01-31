@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF56b7e4"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/from_contact"
+            android:gravity="center"
+            android:paddingLeft="60dip"
+            android:paddingRight="0dip"
+            android:text="from Contacts"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/telephone_bg2"
+	    >
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/bottomLayout"
+	    android:fillViewport="true" 
+	    android:scrollbars="vertical"
+	    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/name" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:hint="NAME"
+                android:singleLine="true"
+                android:textColorHint="#FFFFFFFF"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:hint="PHONE"
+                android:textColorHint="#FFFFFFFF"
+                android:singleLine="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/email" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:hint="EMAIL"
+                android:textColorHint="#FFFFFFFF"
+                android:singleLine="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+	<LinearLayout
+	    android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       	android:orientation="vertical"  >
+		<Button
+	        android:id="@+id/update"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="10dip"
+	        android:background="@drawable/save_btn"
+	        android:paddingBottom="15dip"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="15dip"
+	        android:text="SAUVEGARDER"
+	        android:textColor="#ffffffff"
+	        android:textSize="30sp" />
+	</LinearLayout>
+    </RelativeLayout>
+	
+</LinearLayout>

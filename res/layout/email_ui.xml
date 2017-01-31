@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    
+    <!-- ><LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/setting_block"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            layout="@layout/launch_setting" />
+
+       <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sos_layout"/> 
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/mail_bg1"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="4dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/txtQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/email_q1"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+       	<!-- <ImageView
+            android:id="@+id/imgVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            android:src="@drawable/volume" /> -->
+
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/mail_bg2"
+	    >
+       	<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@+id/bottomLayout"
+		    android:fillViewport="true" 
+		    android:scrollbars="vertical"
+		    >
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:paddingTop="2dp" >
+
+			<Button
+			    android:id="@+id/button1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"
+			    android:background="@drawable/telephone_btn"
+			    android:gravity="center_vertical|left"
+			    android:paddingBottom="15dp"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="0dp"
+			    android:paddingTop="15dp"
+			    android:text="@string/email_q1_option1"
+			    android:textColor="#ffffffff"
+			    android:textSize="18sp" />
+	
+			<Button
+			    android:id="@+id/button2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/repertoire_btn"
+			    android:gravity="center_vertical|left"
+			    android:paddingBottom="15dp"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="0dp"
+			    android:paddingTop="15dp"
+			    android:text="@string/email_q1_option2"
+			    android:textColor="#ffffffff"
+			    android:textSize="18sp" />
+
+		</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+		    android:id="@id/bottomLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+        	android:orientation="vertical" 
+        	android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:paddingBottom="5dp" >
+
+			<Button
+			    android:id="@+id/btnBack"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/back_btn"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:paddingBottom="15dp"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:paddingTop="15dp"
+			    android:text="@string/back_home"
+			    android:textColor="#ffffffff"
+			    android:textSize="18sp" />
+
+		</LinearLayout>
+   	</RelativeLayout>
+</LinearLayout>

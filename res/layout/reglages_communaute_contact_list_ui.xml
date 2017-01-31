@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.launch.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    
+    <!-- ><LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/setting_block"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            layout="@layout/launch_setting" />
+
+       <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sos_layout"/> 
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/reglages_bg1"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="4dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/txtQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="false"
+            android:text="@string/reglages_q3_contactlist"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="normal" />
+
+       	<!-- <ImageView
+            android:id="@+id/imgVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            android:src="@drawable/volume" />-->
+
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/reglages_bg2"
+	    >
+       	<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@+id/bottomLayout"
+		    android:fillViewport="true" 
+		    android:scrollbars="vertical"
+		    >
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:paddingTop="2dp" >
+			<Button
+		        android:id="@+id/add"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="15dip"
+		        android:layout_marginBottom="15dip"
+		      	android:background="@drawable/sms_btn"
+			    android:gravity="center"
+			    android:paddingBottom="15dp"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="0dp"
+			    android:paddingTop="15dp"
+		        android:text="AJOUTER UN CONTACT"
+		        android:textColor="#ffffffff"
+		        android:textSize="18sp" />
+			
+			<com.launch.sort.DragSortListView
+		        android:id="@+id/contacts"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:dividerHeight="1dp"
+		        android:fastScrollEnabled="true"
+		        android:paddingBottom="0dp"
+		        android:paddingLeft="0dp"
+		        android:paddingRight="0dp"
+		        android:paddingTop="0dp"
+		        dslv:collapsed_height="2dp"
+		        dslv:drag_enabled="true"
+		        dslv:drag_handle_id="@id/drag_handle"
+		        dslv:drag_scroll_start="0.33"
+		        dslv:drag_start_mode="onDown"
+		        dslv:float_alpha="0.6"
+		        dslv:max_drag_scroll_speed="0.5"
+		        dslv:remove_enabled="true"
+		        dslv:remove_mode="flingRemove"
+		        dslv:slide_shuffle_speed="0.3"
+		        dslv:sort_enabled="true"
+		        dslv:track_drag_sort="false"
+		        dslv:use_default_controller="true" />
+		</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+		    android:id="@id/bottomLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:orientation="vertical"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp" >
+
+			<Button
+			    android:id="@+id/btnBack"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/back_btn"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:paddingBottom="15dp"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:paddingTop="15dp"
+			    android:text="@string/back_home"
+			    android:textColor="#ffffffff"
+			    android:textSize="18sp" />
+
+		</LinearLayout>
+   	</RelativeLayout>
+</LinearLayout>

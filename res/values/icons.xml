@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="menu_icon">
+        <item>friends_icon</item>
+        <item>moi_icon</item>
+        <item>votre_icon</item>
+        <item>alert_setting</item>
+        <item>setting_icon</item>
+    </string-array>
+     <string-array name="menu_s2_icon">
+        <item>informations</item>
+        <item>adresse</item>
+        <item>votre_acces</item>
+    </string-array>
+    <string-array name="menu_s4_icon">
+        <item>chute</item>
+        <item>inactive</item>
+        <item>batterie</item>
+        <item>zone</item>
+    </string-array>
+    <string-array name="menu_s3_icon">
+        <item>enfant</item>
+        <item>voisin</item>
+        <item>ami</item>
+        <item>aide</item>
+        <item>proches</item>
+        
+    </string-array>
+</resources>

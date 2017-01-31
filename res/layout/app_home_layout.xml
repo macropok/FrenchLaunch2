@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/apps"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animationCache="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:horizontalSpacing="10dip"
+        android:layoutAnimation="@anim/grid_load_anim"
+        android:numColumns="3"
+        android:verticalSpacing="20dip" />
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="save_down">#FF2c4168</color>
+    <color name="black">#333333</color>
+    <color name="save">#FF33589f</color>
+    <color name="telephone_btn">#ff51b63c</color>
+    <color name="telephone_btn_pressed">#ff186807</color>
+    <color name="repertoire_btn">#ff60ad9d</color>
+    <color name="repertoire_btn_pressed">#ff0a5d4c</color>
+    <color name="sms_btn">#ff375e8f</color>
+    <color name="sms_btn_pressed">#ff042146</color>
+    <color name="email_btn">#ff484098</color>
+    <color name="email_btn_pressed">#ff110b49</color>
+    <color name="photo_btn">#ff451879</color>
+    <color name="photo_btn_pressed">#ff280254</color>
+    <color name="galerie_btn">#ff740f74</color>
+    <color name="galerie_btn_pressed">#ff350135</color>
+    <color name="utilitaires_btn">#ff9d1442</color>
+    <color name="utilitaires_btn_pressed">#ff56021e</color>
+    <color name="internet_btn">#ffb23a17</color>
+    <color name="internet_btn_pressed">#ff4e1301</color>
+    <color name="facebook_btn">#ff864700</color>
+    <color name="facebook_btn_pressed">#ff4b2801</color>
+    <color name="mon_chemin_btn">#ffb28417</color>
+    <color name="mon_chemin_btn_pressed">#ff624602</color>
+    <color name="fiche_medicale_btn">#ffb29b17</color>
+    <color name="fiche_medicale_btn_pressed">#ff635503</color>
+    <color name="applications_btn">#ffadb117</color>
+    <color name="applications_btn_pressed">#ff676a02</color>
+    <color name="mes_alertes_btn">#ff414b39</color>
+    <color name="mes_alertes_btn_pressed">#ff1e2717</color>
+    <color name="reglages_btn">#ff091302</color>
+    <color name="reglages_btn_pressed">#ff000000</color>
+    <color name="back_btn">#ff4d342f</color>
+    <color name="back_btn_pressed">#ff2c1915</color>
+    <color name="browser_btn">#ffffffff</color>
+    <color name="browser_btn_pressed">#ffa4a2a2</color>
+    <color name="config_radiobutton">#ffffffff</color>
+    <color name="config_radiobutton_checked">#ffe66d68</color>
+</resources>
